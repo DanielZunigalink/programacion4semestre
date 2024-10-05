@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Erick</title>  
+    <link rel="stylesheet" href="decoracion.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <div class="gift-box"></div>
+        <div class="message">¡Feliz Cumpleaños Erick!</div>
+        <div class="balloons">
+            <div class="balloon" style="background-color: #1d055f;"></div>
+            <div class="balloon" style="background-color: #f3851f;"></div>
+            <div class="balloon" style="background-color: #055b66;"></div>
+        </div>
+        <div class="logos">
+            <img src="logo 1.jfif" alt="Logo 1" class="logo">
+            <img src="logo 2.jfif" alt="Logo 2" class="logo">
+            <img src="logo 3.jfif" alt="Logo 3" class="logo">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelector('.gift-box').style.display = 'none';
+                document.querySelector('.message').style.display = 'block';
+                document.querySelector('.balloons').style.display = 'flex';
+                document.querySelector('.logos').style.display = 'flex';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
